@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "73af1884-fade-4caf-b104-ebe6dd81ed26",
+		"name": "proyecto_quiniela_fase1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23526337"
+	},
+	"item": [
+		{
+			"name": "http://proyecto_quiniela.com/controller/administradores.php?op=GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://proyecto_quiniela.com/controller/administradores.php?op=GetAll",
+					"protocol": "http",
+					"host": [
+						"proyecto_quiniela",
+						"com"
+					],
+					"path": [
+						"controller",
+						"administradores.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "GetAll"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=GetAll",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=GetAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PROYECTO_QUINIELA",
+								"controller",
+								"administradores.php"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "GetAll"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 24 Sep 2022 00:55:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.0.19"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.19"
+						},
+						{
+							"key": "Content-Length",
+							"value": "413"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"0\": \"1\",\n        \"1\": \"Byron Roman\",\n        \"2\": \"bromanc1@miumg.edu.gt\",\n        \"3\": \"Hoyesviernes*1852\",\n        \"4\": \"A\",\n        \"id\": \"1\",\n        \"nombre\": \"Byron Roman\",\n        \"correo\": \"bromanc1@miumg.edu.gt\",\n        \"password\": \"Hoyesviernes*1852\",\n        \"estado\": \"A\"\n    },\n    {\n        \"0\": \"2\",\n        \"1\": \"Coralia Cuellar\",\n        \"2\": \"ccuellard@miumg.edu.gt\",\n        \"3\": \"Sabadodeentrega*1853\",\n        \"4\": \"A\",\n        \"id\": \"2\",\n        \"nombre\": \"Coralia Cuellar\",\n        \"correo\": \"ccuellard@miumg.edu.gt\",\n        \"password\": \"Sabadodeentrega*1853\",\n        \"estado\": \"A\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=GetId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"adm_id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://proyecto_quiniela.com/controller/administradores.php?op=GetId",
+					"protocol": "http",
+					"host": [
+						"proyecto_quiniela",
+						"com"
+					],
+					"path": [
+						"controller",
+						"administradores.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "GetId"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"admins_id\": 5,\r\n  \"admins_nombre\": \"Prueba Numero 40\",\r\n  \"admins_correo\": \"prueba40@gmial.com\",\r\n  \"admins_password\": \"Hoyeslaentrega*0718\",\r\n  \"admins_estado\": \"A\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=Insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PROYECTO_QUINIELA",
+						"controller",
+						"administradores.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "Insert"
+						}
+					]
+				},
+				"description": "Prueba de Insert\r\nSe inserta a la base de datos "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"admins_id\": 5,\r\n  \"admins_nombre\": \"Prueba Numero 40 Actualizar Que paja porque mañana dice en el documento que es la entrega y entonces\",\r\n  \"admins_correo\": \"prueba40@gmial.com\",\r\n  \"admins_password\": \"Hoyeslaentrega*0759\",\r\n  \"admins_estado\": \"A\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=Update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PROYECTO_QUINIELA",
+						"controller",
+						"administradores.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "Update"
+						}
+					]
+				},
+				"description": "Prueba de Actualizacion"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PROYECTO_QUINIELA/controller/estructuras.php?op=Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"admins_id\": \"6\"\r\n \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=Delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PROYECTO_QUINIELA",
+						"controller",
+						"administradores.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "Delete"
+						}
+					]
+				},
+				"description": "Eliminacion de registo(solo cambia el estado)"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/PROYECTO_QUINIELA/controller/estructuras.php?op=Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"est_id\": \"1\",\r\n  \"est_nombre\": \"grupos\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://proyecto_quiniela.com/controller/estructuras.php?op=Insert",
+					"protocol": "http",
+					"host": [
+						"proyecto_quiniela",
+						"com"
+					],
+					"path": [
+						"controller",
+						"estructuras.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "Insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://proyecto_quiniela.com/controller/estructuras.php?op=GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://proyecto_quiniela.com/controller/estructuras.php?op=GetAll",
+					"protocol": "http",
+					"host": [
+						"proyecto_quiniela",
+						"com"
+					],
+					"path": [
+						"controller",
+						"estructuras.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "GetAll"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://proyecto_quiniela.com/controller/estructuras.php?op=GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://proyecto_quiniela.com/controller/estructuras.php?op=GetAll",
+					"protocol": "http",
+					"host": [
+						"proyecto_quiniela",
+						"com"
+					],
+					"path": [
+						"controller",
+						"estructuras.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "GetAll"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://proyecto_quiniela.com/controller/administradores.php?op=GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://proyecto_quiniela.com/controller/administradores.php?op=GetAll",
+					"protocol": "http",
+					"host": [
+						"proyecto_quiniela",
+						"com"
+					],
+					"path": [
+						"controller",
+						"administradores.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "GetAll"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=GetAll",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/PROYECTO_QUINIELA/controller/administradores.php?op=GetAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"PROYECTO_QUINIELA",
+								"controller",
+								"administradores.php"
+							],
+							"query": [
+								{
+									"key": "op",
+									"value": "GetAll"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 24 Sep 2022 00:55:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.0.19"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.19"
+						},
+						{
+							"key": "Content-Length",
+							"value": "413"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"0\": \"1\",\n        \"1\": \"Byron Roman\",\n        \"2\": \"bromanc1@miumg.edu.gt\",\n        \"3\": \"Hoyesviernes*1852\",\n        \"4\": \"A\",\n        \"id\": \"1\",\n        \"nombre\": \"Byron Roman\",\n        \"correo\": \"bromanc1@miumg.edu.gt\",\n        \"password\": \"Hoyesviernes*1852\",\n        \"estado\": \"A\"\n    },\n    {\n        \"0\": \"2\",\n        \"1\": \"Coralia Cuellar\",\n        \"2\": \"ccuellard@miumg.edu.gt\",\n        \"3\": \"Sabadodeentrega*1853\",\n        \"4\": \"A\",\n        \"id\": \"2\",\n        \"nombre\": \"Coralia Cuellar\",\n        \"correo\": \"ccuellard@miumg.edu.gt\",\n        \"password\": \"Sabadodeentrega*1853\",\n        \"estado\": \"A\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
