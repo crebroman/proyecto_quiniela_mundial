@@ -35,6 +35,8 @@
   
           }
 
+       
+
           public function update_paises($paises_id,$paises_nombre,$paises_iso){
             $conectar= parent::conexion();
             parent ::set_names();
@@ -51,6 +53,7 @@
             return $resultado=$sql->fetchall(PDO::FETCH_ASSOC);
   
           }
+
 
           public function delete_paises($paises_id){
             $conectar= parent::conexion();
