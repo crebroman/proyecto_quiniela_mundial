@@ -11,12 +11,12 @@
        }
 
 
-       public function get_paises_x_id($adm_id){
+       public function get_paises_x_id($paises_id){
           $conectar= parent::conexion();
           parent ::set_names();
           $sql="SELECT * FROM paises WHERE id = ?";
           $sql=$conectar->prepare($sql);
-          $sql->bindValue(1,$adm_id);
+          $sql->bindValue(1,$paises_id);
           $sql->execute();
           return $resultado=$sql->fetchall(PDO::FETCH_ASSOC);
 

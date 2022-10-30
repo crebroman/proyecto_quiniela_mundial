@@ -8,7 +8,6 @@ $paises = new Paises();
 
 $body = json_decode(file_get_contents("php://input"),true);
 
-
 switch($_GET["op"]){
       case "GetAll":
          $datos=$paises->get_paises();
@@ -17,7 +16,7 @@ switch($_GET["op"]){
       break;
 
       case "GetId":
-         $datos=$paises->get_paises_x_id($body["adm_id"]);
+         $datos=$paises->get_paises_x_id($body["paises_id"]);
         echo json_encode($datos);
 
       break;
