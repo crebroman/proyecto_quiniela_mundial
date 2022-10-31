@@ -40,11 +40,9 @@
           public function update_paises($paises_id,$paises_nombre,$paises_iso){
             $conectar= parent::conexion();
             parent ::set_names();
-            $sql="UPDATE paises set 
-                  nombre=?,
-                  iso=?
-                  where 
-                  id=?";
+                   $sql="UPDATE paises set nombre=?, iso=? 
+                   where 
+                   id=?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$paises_nombre);
             $sql->bindValue(2,$paises_iso);
