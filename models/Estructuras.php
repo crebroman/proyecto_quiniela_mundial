@@ -38,7 +38,7 @@
             $conectar= parent::conexion();
             parent ::set_names();
             $sql="UPDATE estructuras set 
-                  nombre=?,
+                  nombre=? 
                   where 
                   id=?";
             $sql=$conectar->prepare($sql);

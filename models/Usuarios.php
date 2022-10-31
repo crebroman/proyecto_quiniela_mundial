@@ -42,7 +42,7 @@
                   nombre=?,
                   correo=?               
                   where 
-                  id=?";
+                   id=?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$usuario_nombre);
             $sql->bindValue(2,$usuario_correo);

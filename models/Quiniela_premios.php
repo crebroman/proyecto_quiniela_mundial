@@ -46,7 +46,7 @@
                   premio=?,
                   descripcion=? 
                   where 
-                  id=?";
+                   id=?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$quiniela_prem_quiniela);
             $sql->bindValue(2,$quiniela_prem_puesto);

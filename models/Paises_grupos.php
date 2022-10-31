@@ -40,7 +40,7 @@
             parent ::set_names();
             $sql="UPDATE paises_grupos set 
                   pais=?,
-                  grupo=?,
+                  grupo=?
                   where 
                   id=?";
             $sql=$conectar->prepare($sql);

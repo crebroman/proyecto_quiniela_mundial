@@ -47,9 +47,9 @@
                   juego=?,
                   quiniela=?,
                   usuario=?,
-                  gol_1=? 
-                  gol_2=? 
-                  juego_1=? 
+                  gol_1=?, 
+                  gol_2=?,
+                  juego_1=?, 
                   juego_2=? 
                   where 
                   id=?";

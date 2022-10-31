@@ -47,9 +47,9 @@
                   nombre=?,
                   tipo_de_quiniela=?,
                   descripcion=?,
-                  creado_por=?
-                  fecha_de_creacion=? 
-                  codigo_compartir=?
+                  creado_por=?,
+                  fecha_de_creacion=?, 
+                  codigo_compartir=?,
                   ganador=?
                   where 
                   id=?";

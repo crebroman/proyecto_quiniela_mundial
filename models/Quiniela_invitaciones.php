@@ -46,7 +46,7 @@
                   fecha_de_creacion=?,
                   status=? 
                   where 
-                  id=?";
+                   id=?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$quiniela_inv_usuario);
             $sql->bindValue(2,$quiniela_inv_quiniela);

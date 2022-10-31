@@ -56,7 +56,7 @@
                   seleccion_1=?,
                   seleccion_2=? 
                   where 
-                  id=?";
+                   id=?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$juego_estructura);
             $sql->bindValue(2,$juego_fecha);

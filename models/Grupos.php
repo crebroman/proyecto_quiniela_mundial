@@ -39,7 +39,7 @@
             parent ::set_names();
             $sql="UPDATE grupos set 
                   codigo=?
-                  where 
+                  where  
                   id=?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$grupo_codigo);

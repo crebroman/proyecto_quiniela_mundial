@@ -40,7 +40,7 @@
             $sql="UPDATE quiniela_tipos set 
                   nombre=?                 
                   where 
-                  id=?";
+                   id=?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$quiniela_tipo_nombre);
             $sql->bindValue(2,$quiniela_tipo_id);

@@ -42,7 +42,7 @@
             parent ::set_names();
             $sql="UPDATE paises set 
                   nombre=?,
-                  iso=?,
+                  iso=?
                   where 
                   id=?";
             $sql=$conectar->prepare($sql);

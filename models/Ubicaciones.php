@@ -38,9 +38,7 @@
           public function update_ubicaciones($ubicaciones_id,$ubicaciones_nombre,$ubicaciones_ciudad){
             $conectar= parent::conexion();
             parent ::set_names();
-            $sql="UPDATE ubicaciones set 
-                  nombre=?,
-                  ciudad=?,
+            $sql="UPDATE ubicaciones set  nombre=?, ciudad=?  
                   where 
                   id=?";
             $sql=$conectar->prepare($sql);

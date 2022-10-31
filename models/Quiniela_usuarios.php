@@ -40,7 +40,7 @@
             parent ::set_names();
             $sql="UPDATE quiniela_usuarios set 
                   quiniela=?,
-                  usuario=?,
+                  usuario=?
                   where 
                   id=?";
             $sql=$conectar->prepare($sql);
